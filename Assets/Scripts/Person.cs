@@ -49,7 +49,11 @@ public class Person : MonoBehaviour
 				this.sacrificeValue = GetSacrificeValue ();
 				this.town = GameObject.FindObjectOfType<Town> () as Town;
 				this.Wander ();
-				this.hut = gameObject.transform.parent.GetComponent<Hut> ();
+				if (gameObject.transform.parent != null) {
+						this.hut = gameObject.transform.parent.GetComponent<Hut> ();
+				} else {
+						hut = new Hut ();
+				}				
 				this.tensionValue = GetTensionValue ();
 		}
 

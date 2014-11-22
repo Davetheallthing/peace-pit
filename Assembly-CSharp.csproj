@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DragAndDrop.cs" />
      <Compile Include="Assets\Scripts\Hut.cs" />
      <Compile Include="Assets\Scripts\Person.cs" />
      <Compile Include="Assets\Scripts\Pit.cs" />
